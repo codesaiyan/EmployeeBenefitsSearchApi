@@ -5,6 +5,11 @@ The provided csv file with the data was first parsed to json and uploaded in chu
 
 ## Example API Calls
 
+#### Call to the running application in local machine
+```
+http://localhost:5000/employeebenefitplan?sponsorState=MA
+```
+
 #### Direct call to Amazon Elastic Search API
 
 ```
