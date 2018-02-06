@@ -1,6 +1,6 @@
 # EmployeeBenefitsSearchApi
 This Spring Boot project exposes a search api for searching for employee benefit records based on plan name, sponsor name and sponsor state.
-AWS Elastic search is the search engine and we are connecting to it via microservice in Spring. I have used AWS Elastic Beanstalk to host the application via WAR file deployment.
+AWS Elastic search is the search engine and I am connecting to it via the microservice I wrote. I have used AWS Elastic Beanstalk to host the application via WAR file deployment.
 The provided csv file with the data was first parsed to json and uploaded in bulk to Amazon ES. I referred to the documentation in https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-gsg-upload-data.html to achieve this.
 
 ## Example API Calls
@@ -29,7 +29,7 @@ curl -X POST \
 '
 ```
 
-#### Call to our hosted application on AWS Elastic Beanstalk
+#### Call to the hosted application on AWS Elastic Beanstalk
 
 ```
 curl -X GET \
